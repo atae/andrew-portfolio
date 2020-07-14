@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/andrews-hot-ass-portfolio-site/static/css/main.1a2b2d4a.chunk.css",
+    "main.js": "/andrews-hot-ass-portfolio-site/static/js/main.9fe7f86c.chunk.js",
+    "main.js.map": "/andrews-hot-ass-portfolio-site/static/js/main.9fe7f86c.chunk.js.map",
+    "runtime-main.js": "/andrews-hot-ass-portfolio-site/static/js/runtime-main.5cdf31da.js",
+    "runtime-main.js.map": "/andrews-hot-ass-portfolio-site/static/js/runtime-main.5cdf31da.js.map",
+    "static/js/2.c6533620.chunk.js": "/andrews-hot-ass-portfolio-site/static/js/2.c6533620.chunk.js",
+    "static/js/2.c6533620.chunk.js.map": "/andrews-hot-ass-portfolio-site/static/js/2.c6533620.chunk.js.map",
+    "index.html": "/andrews-hot-ass-portfolio-site/index.html",
+    "precache-manifest.29359652640607727192c219b3ad38d0.js": "/andrews-hot-ass-portfolio-site/precache-manifest.29359652640607727192c219b3ad38d0.js",
+    "service-worker.js": "/andrews-hot-ass-portfolio-site/service-worker.js",
+    "static/css/main.1a2b2d4a.chunk.css.map": "/andrews-hot-ass-portfolio-site/static/css/main.1a2b2d4a.chunk.css.map",
+    "static/js/2.c6533620.chunk.js.LICENSE.txt": "/andrews-hot-ass-portfolio-site/static/js/2.c6533620.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5cdf31da.js",
+    "static/js/2.c6533620.chunk.js",
+    "static/css/main.1a2b2d4a.chunk.css",
+    "static/js/main.9fe7f86c.chunk.js"
+  ]
+}
