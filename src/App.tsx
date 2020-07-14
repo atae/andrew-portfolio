@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import SplashLink from './splashLink';
+import SplashLinks from './splashLinks';
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -12,10 +12,7 @@ import SplashLink from './splashLink';
 function App() {
   return (
     <div className="App">
-      <SplashLink background="green" text="Frontend Software Engineer" position="first"/>
-      <SplashLink background="white" text="Musician" position="second"/>
-      <SplashLink background="orange" text="Nerd" position="third"/>
-
+      <SplashLinks />
     </div>
   );
 }

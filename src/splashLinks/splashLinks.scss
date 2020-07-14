@@ -1,0 +1,85 @@
+@import '../styles/_colors.scss';
+
+
+.splash-links {
+  display: flex; 
+  justify-content: space-between;
+  height: 100%;
+  // flex-direction: column;
+
+  .splash-link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px rgba(0,0,0,0.25);
+
+    &.unexpanded {
+      height: 100%;
+      max-height: 100%;
+
+      &.first-position {
+        width: 34%;
+        transition: width .5s;
+
+        &:hover {
+          width: 50%;
+          transition: width .5s;
+        }
+      };
+    
+      &.second-position {
+        width: 34%;
+        transition: width .5s;
+        &:hover {
+          width: 50%;
+          transition: width .5s;
+        }
+      }
+    
+      &.third-position {
+        width: 34%;
+        transition: width .5s;
+        &:hover {
+          width: 50%;
+          transition: width .5s;
+        }
+      }
+    }
+    
+
+    &.expanded {
+      width: 100%;
+      transition: width 2s;
+    }
+
+    &.flat {
+      width: 0%;
+      transition: width 2s;
+    }
+
+    button {
+      width: 100%;
+      height: 100%;
+      border: none;
+      text-align: right;
+      
+      &:hover {
+        cursor: pointer;
+        
+        h2 {
+          font-size: 24px;
+          transition: font-size 0.25s;
+        }
+      }
+
+      h2 {
+        font-family: 'Quicksand';
+        margin-right: 10px;
+        transition: font-size 0.25s;
+        font-weight: 100;
+      }
+
+    }
+  }
+}
+;

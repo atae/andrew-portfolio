@@ -1,9 +1,14 @@
 @import '/styles/_colors.scss';
 @import-normalize;
-@import '/splashLink/splashLink.scss';
+@import '/splashLinks/splashLinks.scss';
+
+body {
+  background-color: $red;
+}
 
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {

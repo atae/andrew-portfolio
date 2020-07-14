@@ -8,6 +8,7 @@ $red: #78290fff;
 
 .green-background {
   background-color: $green;
+  color: $white;
 }
 
 .black-background {
@@ -16,10 +17,12 @@ $red: #78290fff;
 
 .white-background {
   background-color: $white;
+  color: $red;
 }
 
 .orange-background {
   background-color: $orange;
+  color: $black;
 }
 
 .red-background {
