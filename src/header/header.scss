@@ -1,0 +1,17 @@
+.header {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  // background: $white;
+  font-size: 28px;
+  // color: $black;
+
+  h1 {
+    font-family: 'Quicksand';
+    font-weight: 100;
+  }
+
+  -webkit-transition: background-color 1000ms linear, color 500ms linear;
+  -ms-transition: background-color 1000ms linear, color 500ms linear;
+  transition: background-color 1000ms linear, color 500ms linear;
+}

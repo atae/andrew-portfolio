@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.scss';
 import SplashLinks from './splashLinks';
+import Header from './header';
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -10,9 +11,11 @@ import SplashLinks from './splashLinks';
 
 
 function App() {
+  let [currentLink, changeCurrentLink] = useState('home');
   return (
     <div className="App">
-      <SplashLinks />
+      <Header currentLink={currentLink}/>
+      <SplashLinks currentLink={currentLink} changeCurrentLink={changeCurrentLink}/>
     </div>
   );
 }

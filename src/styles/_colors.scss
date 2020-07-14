@@ -9,28 +9,43 @@ $red: #78290fff;
 .green-background {
   background-color: $green;
   color: $white;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .black-background {
   background-color: $black;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .white-background {
   background-color: $white;
   color: $red;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .orange-background {
   background-color: $orange;
   color: $black;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .red-background {
   background-color: $red;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 /* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-top: linear-gradient(0deg, #001524ff, #15616dff, #ffecd1, #ff7d00ff, #78290fff);
 $gradient-right: linear-gradient(90deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
 $gradient-bottom: linear-gradient(180deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
 $gradient-left: linear-gradient(270deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);

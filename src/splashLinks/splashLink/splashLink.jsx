@@ -1,10 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
-export default function SplashLink({background, text, position}) {
+export default function SplashLink({background, text, position, onClick, expanded}) {  
   return(
-    <div className={`splash-link ${position}-position unexpanded`}>
-      <button className={`${background}-background`}>
+    <div className={`splash-link ${position}-position ${expanded}`}>
+      <button onClick={onClick} className={`${background}-background`}>
           <h2>{text}</h2>
       </button>
     </div>

@@ -1,1 +1,1 @@
-export {default as default} from './splashLinks';
+export {default} from './splashLinks';
