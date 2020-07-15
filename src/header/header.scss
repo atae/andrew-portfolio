@@ -1,21 +1,28 @@
+@import '/navbar/navbar.scss';
+
+
 .header {
   position: absolute;
   display: flex;
-  justify-content: center;
+  .info-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: baseline;
+    align-items: center;
+
+    @media(max-width: 576px) {
+      flex-direction: column;
+    };
+  }
   z-index: 1000;
+  justify-content: center;
+  flex-direction: column;
   left: 0;
   right: 0;
   padding: 20px;
   font-size: 28px;
-  vertical-align: baseline;
-  align-items: center;
-  -webkit-transition: background-color 1000ms linear, color 500ms linear;
-  -ms-transition: background-color 1000ms linear, color 500ms linear;
-  transition: background-color 1000ms linear, color 500ms linear;
 
-  @media(max-width: 576px) {
-    flex-direction: column;
-  };
+
 
   .andrew-head-cropper {
     position: relative;
@@ -41,6 +48,7 @@
       right: 0;
       top: 25%;
     }
+
   }
 
   .andrew-title {
@@ -48,6 +56,10 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+
+    @media(max-width: 576px) {
+      text-align: center;
+    };
 
     h1 {
       font-family: 'Quicksand';
