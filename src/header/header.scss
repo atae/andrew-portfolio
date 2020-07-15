@@ -4,6 +4,14 @@
 .header {
   position: absolute;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  font-size: 24px;
+
   .info-container {
     display: flex;
     justify-content: center;
@@ -14,31 +22,22 @@
       flex-direction: column;
     };
   }
-  z-index: 1000;
-  justify-content: center;
-  flex-direction: column;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  font-size: 28px;
-
-
 
   .andrew-head-cropper {
     position: relative;
     overflow: hidden;
-    width: 175px;
-    min-width: 175px;
-    height: 175px;
-    min-height: 175px;
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    min-height: 150px;
     border-radius: 50%;
     background-color: $white;
     border: 2px solid $white;
 
     .andrew-head {
       position: relative;
-      width: 200px;
-      height: 200px;
+      width: 175px;
+      height: 175px;
       margin-top: -20px;
     }
 
@@ -59,6 +58,7 @@
 
     @media(max-width: 576px) {
       text-align: center;
+      margin-left: 0;
     };
 
     h1 {
@@ -69,13 +69,17 @@
 
     h2 {
       margin-top: 4px;
-      font-size: 32px;
+      font-size: 28px;
     }
 
     .title-placeholder {
       margin-top: 4px;
-      min-height: 32px;
+      min-height: 28px;
     }
+  }
+
+  .disable-link {
+    pointer-events: none;
   }
 
   .clickable {
@@ -87,21 +91,4 @@
       transition: opacity .25s;
     }
   }
-
-
-  
-
-  .back-button {
-    border: none;
-    background-color: transparent;
-    font-size: 24px;
-    transition: font-size .5s;
-
-    &:hover {
-      cursor: pointer;
-      font-size: 32px;
-      transition: font-size .5s;
-    }
-  }
-
 }

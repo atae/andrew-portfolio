@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 export default function Navbar({currentLink, pageInfo}) { 
   let navbarLinks = {
@@ -40,12 +40,25 @@ export default function Navbar({currentLink, pageInfo}) {
         text: 'Contact'
       }
     ],
-    'nerd': []
+    'nerd': [
+      {
+        pageName: 'about',
+        text: 'About',
+      },
+    ]
   }
+  let currentPage = useLocation().pathname.split('/')[2]
 
   let generateLinks = () => {
     return navbarLinks[currentLink].map(linkInfo => {
-      return (<li><Link to={`/${currentLink}/${linkInfo.pageName}`}>{linkInfo.text}</Link></li>)
+      return (<li>
+        <Link 
+          className={linkInfo.pageName === currentPage ? 'active' : ''}
+          to={`/${currentLink}/${linkInfo.pageName}`}
+        >
+          {linkInfo.text}
+        </Link>
+      </li>)
     })
   }
 

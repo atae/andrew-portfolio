@@ -22,7 +22,12 @@ export default function SplashLinks({currentLink, changeCurrentLink}) {
     }
   ]
 
-  let onClick = (currentLink) => () => {changeCurrentLink(currentLink)}
+  let onClick = (nextLink) => () => { 
+    if (currentLink === 'home') {
+      changeCurrentLink(nextLink)
+    }
+  }
+
   let assignExpandedClass = (pageName) => {
     if (currentLink === 'home') {
       return 'unexpanded';

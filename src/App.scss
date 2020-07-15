@@ -2,9 +2,12 @@
 @import '/styles/_colors.scss';
 @import '/splashLinks/splashLinks.scss';
 @import '/header/header.scss';
+@import '/page/page.scss';
 
 body {
   background-color: $red;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .App {

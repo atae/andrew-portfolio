@@ -24,7 +24,6 @@ export default function Header({currentLink, changeCurrentLink}) {
   }
 
   let backButtonColor = currentLink === 'engineer' ? 'white' : pageInfo[currentLink].pageColor
-
   return (
     <header className={`header ${pageInfo[currentLink].pageColor}-background-font`}>
       <div className="info-container">
@@ -34,7 +33,7 @@ export default function Header({currentLink, changeCurrentLink}) {
               Back
             </p>
           }
-          <Link to={"/"} onClick={()=> {changeCurrentLink('home')}}>
+          <Link to={"/"} className={currentLink === 'home' ? 'disable-link' : ''} onClick={()=> {changeCurrentLink('home')}}>
             <img 
               className={`andrew-head ${ currentLink === 'home' ? '' : 'clickable'}`} 
               src={Photo}

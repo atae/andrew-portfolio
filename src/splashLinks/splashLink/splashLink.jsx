@@ -5,7 +5,7 @@ export default function SplashLink({background, text, position, onClick, expande
   let clickedClass = clicked ? 'clicked' : '';
   return(
     <div className={`splash-link ${position}-position ${expanded} ${clickedClass}`}>
-      <Link to={`${pageName}/about`}>
+      <Link to={`/${pageName}/about`}>
         <button onClick={onClick} className={`${background}-background ${clickedClass}`}>
             <h2 className={clicked ? 'fadeOut' : 'fadeIn'}>{text}</h2>
         </button>
