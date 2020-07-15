@@ -39,6 +39,8 @@ export default function SplashLinks({currentLink, changeCurrentLink}) {
           text = {link.text}
           position = {i}
           onClick = {onClick(link.pageName)}
+          clicked = {link.pageName === currentLink}
+          pageName = {link.pageName}
           currentLink = {currentLink}
           expanded = {assignExpandedClass(link.pageName)}
           key={`splashLink${i}`}

@@ -36,31 +36,44 @@
       width: 0%;
       transition: width .5s;
     }
-
-    button {
+    a {
       width: 100%;
       height: 100%;
-      border: none;
-      text-align: center;
-      
-      &:hover {
-        cursor: pointer;
+
+      button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        text-align: center;
+        
+        &:hover {
+          cursor: pointer;
+          
+          h2 {
+            font-size: 32px;
+            font-weight: 400;
+            transition: font-size 0.25s;
+          }
+          
+        }
+        
+        &.clicked {
+          cursor: default;
+          
+          h2 {
+            font-size: 32px;
+            transition: opacity 1.2s;
+          }
+        }
         
         h2 {
-          font-size: 32px;
-          font-weight: 400;
-          transition: font-size 0.25s;
+          font-family: 'Quicksand';
+          font-size: 24px;
+          margin-right: 10px;
+          transition: font-size 0.25s, opacity 1s;
+          font-weight: 100;
         }
-      }
-
-      h2 {
-        font-family: 'Quicksand';
-        font-size: 24px;
-        margin-right: 10px;
-        transition: font-size 0.25s;
-        font-weight: 100;
-      }
-
+      } 
     }
   }
 }

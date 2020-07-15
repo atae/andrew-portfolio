@@ -17,26 +17,67 @@
     flex-direction: column;
   };
 
-  h1 {
-    font-family: 'Quicksand';
-    font-weight: 100;
-    margin-left: 24px;
-  }
-
   .andrew-head-cropper {
     position: relative;
     overflow: hidden;
     width: 175px;
+    min-width: 175px;
     height: 175px;
+    min-height: 175px;
     border-radius: 50%;
+    background-color: $white;
     border: 2px solid $white;
 
     .andrew-head {
+      position: relative;
       width: 200px;
       height: 200px;
       margin-top: -20px;
     }
+
+    p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 25%;
+    }
   }
+
+  .andrew-title {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    h1 {
+      font-family: 'Quicksand';
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    h2 {
+      margin-top: 4px;
+      font-size: 32px;
+    }
+
+    .title-placeholder {
+      margin-top: 4px;
+      min-height: 32px;
+    }
+  }
+
+  .clickable {
+    cursor: pointer;
+    transition: opacity .25s;
+
+    &:hover {
+      opacity: 0;
+      transition: opacity .25s;
+    }
+  }
+
+
+  
 
   .back-button {
     border: none;
