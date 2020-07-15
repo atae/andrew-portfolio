@@ -14,6 +14,10 @@ $red: #78290fff;
   transition: background-color 1000ms linear;
 }
 
+.green-background-font {
+  color: $white;
+}
+
 .black-background {
   background-color: $black;
   -webkit-transition: background-color 1000ms linear;
@@ -29,12 +33,20 @@ $red: #78290fff;
   transition: background-color 1000ms linear;
 }
 
+.white-background-font {
+  color: $red
+}
+
 .orange-background {
   background-color: $orange;
   color: $black;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
+}
+
+.orange-background-font {
+  color: $black;
 }
 
 .red-background {

@@ -1,17 +1,54 @@
 .header {
   position: absolute;
+  display: flex;
+  justify-content: center;
   z-index: 1000;
-  width: 100%;
-  // background: $white;
+  left: 0;
+  right: 0;
+  padding: 20px;
   font-size: 28px;
-  // color: $black;
+  vertical-align: baseline;
+  align-items: center;
+  -webkit-transition: background-color 1000ms linear, color 500ms linear;
+  -ms-transition: background-color 1000ms linear, color 500ms linear;
+  transition: background-color 1000ms linear, color 500ms linear;
+
+  @media(max-width: 576px) {
+    flex-direction: column;
+  };
 
   h1 {
     font-family: 'Quicksand';
     font-weight: 100;
+    margin-left: 24px;
   }
 
-  -webkit-transition: background-color 1000ms linear, color 500ms linear;
-  -ms-transition: background-color 1000ms linear, color 500ms linear;
-  transition: background-color 1000ms linear, color 500ms linear;
+  .andrew-head-cropper {
+    position: relative;
+    overflow: hidden;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 2px solid $white;
+
+    .andrew-head {
+      width: 200px;
+      height: 200px;
+      margin-top: -20px;
+    }
+  }
+
+  .back-button {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    transition: font-size .5s;
+
+    &:hover {
+      cursor: pointer;
+      font-size: 32px;
+      transition: font-size .5s;
+    }
+  }
+
 }
