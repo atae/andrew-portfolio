@@ -45,6 +45,18 @@ export default function Navbar({currentLink, pageInfo}) {
         pageName: 'about',
         text: 'About',
       },
+      {
+        pageName: 'japanese',
+        text: '日本語'
+      },
+      {
+        pageName: 'gaming',
+        text: 'Gaming'
+      },
+      {
+        pageName: 'blog',
+        text: 'Blog'
+      }
     ]
   }
   let currentPage = useLocation().pathname.split('/')[2]

@@ -43,11 +43,10 @@ export default function Header({currentLink, changeCurrentLink}) {
         <div className="andrew-title">
           <h1>Andrew Tae</h1>
           <div className={currentLink === 'home' ? 'title-placeholder' : ''}></div>
-          <h2 className={currentLink === 'home' ? 'fadeOut' : 'fadeIn'}>{pageInfo[currentLink].title}</h2>
+          {/* <h2 className={currentLink === 'home' ? 'fadeOut' : 'fadeIn'}>{pageInfo[currentLink].title}</h2> */}
         </div>
       </div>
       <Navbar pageInfo={pageInfo[currentLink]} currentLink={currentLink}/>
     </header>
-
   )
 };

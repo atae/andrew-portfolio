@@ -1,13 +1,41 @@
+@import '/about/about.scss';
+@import '/contact/contact.scss';
+
 .page-container {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: calc(100% - 280px);
+  height: calc(100% - 260px);
   position: absolute;
   z-index: 500;
-  top: 280px;
+  top: 260px;
   bottom: 0;
 
   @media(max-width: 576px) {
     top: 400px;
     height: calc(100% - 350px);
+  }
+}
+
+.page {
+  width: 80%;
+  display:flex;
+  justify-content: center;
+}
+
+.fade-enter {
+  opacity: 0.01;
+  &.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+}
+
+.fade-leave {
+  opacity: 1;
+
+  &.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
   }
 }

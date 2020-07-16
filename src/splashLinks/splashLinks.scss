@@ -43,9 +43,10 @@
       button {
         width: 100%;
         height: 100%;
+        margin: 0;
         border: none;
         text-align: center;
-        
+
         &:hover {
           cursor: pointer;
           
@@ -61,16 +62,30 @@
           cursor: default;
           
           h2 {
-            font-size: 32px;
-            transition: opacity 1.2s;
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: -361px;
+
+            &.engineer {
+              margin-left: 165px;
+            }
+            &.music {
+              margin-left: 34px;
+            }
+            &.nerd {
+              margin-right: 28px;
+            }
+
+            transition: opacity 1.2s, margin .5s;
           }
         }
         
         h2 {
           font-family: 'Quicksand';
           font-size: 24px;
+          margin: 0;
           margin-right: 10px;
-          transition: font-size 0.25s, opacity 1s;
+          transition: font-size 0.25s, margin .5s;
           font-weight: 100;
         }
       } 
