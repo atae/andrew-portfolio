@@ -8,7 +8,8 @@ import {
   useLocation
 } from "react-router-dom";
 
-const Page = lazy(() => import('./page'));
+import Page from './page';
+// const Page = lazy(() => import('./page'));
 
 
 function App() {
@@ -56,10 +57,10 @@ function App() {
   }
 
   const suspendedPage = (type, match) => {
+    // <Suspense fallback={<div className="white-background-font">Loading...</div>}>
+    // </Suspense>
     return (
-      <Suspense fallback={<div className="white-background-font">Loading...</div>}>
         <Page match={match} type={type} />
-      </Suspense>
     );
   }
 

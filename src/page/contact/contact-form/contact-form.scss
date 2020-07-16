@@ -1,3 +1,20 @@
+.contact-methods {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+
+  &:visited {
+    color: $red;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 .contact-form {
   width: 100%;
   h1 {
@@ -14,6 +31,8 @@
   #contact {
     width: 100%;
   }
+
+
 
   * {
     margin: 0;

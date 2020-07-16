@@ -1,4 +1,17 @@
 
+ .skills {
+  text-align: left;
+
+  h4 {
+    text-align: left;
+    font-weight: lighter;
+  }
+  span {
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
+
 .about {
   display: flex;
 
@@ -22,10 +35,20 @@
     min-width: 40%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+    }
   }
 
+
+
+ 
+
   .about-image-cropper {
-      position: relative;
+      // position: relative;
       overflow: hidden;
       width: 50%;
       min-width: 250px;
