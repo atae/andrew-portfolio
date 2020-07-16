@@ -12,7 +12,7 @@ export default function Page({type, match}) {
       'about': {
         title: 'About',
         text: [
-          "I'm a fullstack software engineer and UI/UX Javascript specialist (ES6/React).",
+          "I'm a fullstack software engineer and UI/UX Javascript specialist (ES6/React/Redux).",
           "I do my best work in environments where I know that my code is making a positive impact in the world."
 
         ],

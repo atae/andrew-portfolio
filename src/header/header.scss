@@ -39,6 +39,9 @@
       width: 175px;
       height: 175px;
       margin-top: -20px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      margin-left: -22px;
     }
 
     p {
@@ -64,7 +67,7 @@
     h1 {
       font-family: 'Quicksand';
       font-weight: 600;
-      margin-bottom: 56px;
+      // margin-bottom: 56px;
     }
 
     h2 {

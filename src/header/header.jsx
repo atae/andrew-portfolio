@@ -42,7 +42,7 @@ export default function Header({currentLink, changeCurrentLink}) {
         </div>
         <div className="andrew-title">
           <h1>Andrew Tae</h1>
-          <div className={currentLink === 'home' ? 'title-placeholder' : ''}></div>
+          <div className='title-placeholder'></div>
           {/* <h2 className={currentLink === 'home' ? 'fadeOut' : 'fadeIn'}>{pageInfo[currentLink].title}</h2> */}
         </div>
       </div>

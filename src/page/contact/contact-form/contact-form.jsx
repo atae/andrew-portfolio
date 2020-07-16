@@ -1,21 +1,32 @@
 import React from 'react';
 
-export default function ContactForm() {
+export default function ContactForm({pageColor}) {
 
   return(
-    <article class="contact-form">
-      <header>
-        <h2>Contact</h2>
-      </header>
-      <form action="https://formspree.io/andrewtae368@gmail.com" method="post">
-        <div class="form-fields">
-          <input type="text" name="name" placeholder="Name" />
-          <input type="text" name="email" placeholder="Email" />
-          <input type="text" name="subject" placeholder="Subject" />
-          <textarea name="message" placeholder="Message" rows="8"></textarea>
-          <input type="submit" value="Send Message"/>
-        </div>
-      </form>
-    </article>
+  <div id="contact" class="contact-form container">  
+      <header className={`${pageColor}-background-font`}>
+        <h1>Contact</h1>
+      </header>    
+    <form action="https://formspree.io/andrewtae368@gmail.com" method="post">
+      <fieldset>
+        <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus />
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required />
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number (optional)" name="phone" type="tel" tabindex="3" />
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Web Site (optional)" name="site" type="url" tabindex="4" />
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
   );
 };
