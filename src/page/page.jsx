@@ -40,7 +40,7 @@ export default function Page({type, match}) {
           date: 'July 2020',
           shortDescription: "The site you're on now!",
           tech: ['React', 'Node'],
-          image: 'https://i.gyazo.com/af6ed2a340b7a278f09070dcb2153405.gif',
+          image: 'https://i.gyazo.com/c4e865405d4741027e9e4148c44a5ebc.gif',
           liveUrl: 'https://www.andrewtae.com',
           githubUrl: 'https://github.com/atae/andrews-hot-ass-portfolio-site/'
         },
