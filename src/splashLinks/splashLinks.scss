@@ -64,19 +64,19 @@
           h2 {
             font-size: 28px;
             font-weight: bold;
-            margin-top: -370px;
+            // margin-top: -370px;
 
-            &.engineer {
-              margin-left: 165px;
-            }
-            &.music {
-              margin-left: 34px;
-            }
-            &.nerd {
-              margin-right: 28px;
-            }
+            // &.engineer {
+            //   margin-left: 165px;
+            // }
+            // &.music {
+            //   margin-left: 34px;
+            // }
+            // &.nerd {
+            //   margin-right: 28px;
+            // }
 
-            transition: opacity 1.2s, margin .5s;
+            transition: opacity .5s;
           }
         }
         

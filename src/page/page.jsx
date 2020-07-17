@@ -26,6 +26,8 @@ export default function Page({type, match}) {
         text: [
           "I'm a fullstack software engineer and UI/UX Javascript specialist (ES6/React/Redux).",
           "I do my best work in environments where I know that my code is making a positive impact in the world.",
+          "My passion is in creating beautiful and performant web experiences.",
+          "My extensive experience in web pages for marketing campaigns has served to hone my ability to break down real problems into easy-to-understand actionable tasks.",
         ],
         skills: {
           'Front-end' : ['React', 'Redux', 'Vanilla ES6', 'Karma/Enzyme/Mocha Unit Testing', 'HTML5', 'CSS3', 'SCSS', 'CSS Animations'],
@@ -167,7 +169,6 @@ export default function Page({type, match}) {
   return (
     <div className="page-container">
       <div className="page">
-      {/* <TransitionGroup> */}
         <CSSTransitionGroup
           key={location.key}
           classNames="fade"
