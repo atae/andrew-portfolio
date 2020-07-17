@@ -40,11 +40,6 @@ a {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
   }
 
   body {
@@ -63,7 +58,12 @@ a {
   margin: 0 auto;
   margin-top: 48px;
   max-width: 800px;
-  // position: relative;
+  padding-bottom: 50px;
+
+
+  @media(max-width: 576px) {
+    width: 80%;
+  }
 }
 
 #contact input[type="text"],
@@ -79,6 +79,8 @@ a {
   background: rgba($black, 0.25);
   padding: 25px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: 50px;
+
 }
 
 #contact h3 {

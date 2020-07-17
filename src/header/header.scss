@@ -59,10 +59,6 @@
     flex-direction: column;
     text-align: left;
 
-    @media(max-width: 576px) {
-      text-align: center;
-      margin-left: 0;
-    };
 
     h1 {
       font-family: 'Quicksand';
@@ -79,6 +75,21 @@
       margin-top: 4px;
       min-height: 36px;
     }
+
+
+    @media(max-width: 576px) {
+      text-align: center;
+      margin-left: 0;
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1em;
+      }
+    };
+
   }
 
   .disable-link {

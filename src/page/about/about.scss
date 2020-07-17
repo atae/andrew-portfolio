@@ -14,10 +14,14 @@
 
 .about {
   display: flex;
+  @media(max-width: 576px) {
+    flex-direction: column;
+  }
 
   .content {
     text-align: left;
-    padding: 20px;
+    padding-left: 40px;
+    padding-top: 40px;
 
     h1 {
       font-size: 48px;
@@ -25,8 +29,12 @@
     }
 
     p {
-      font-size: 24px;
+      font-size: 1.5em;
       margin-left: 16px;
+    }
+
+    @media(max-width: 576px) {
+      padding-left: 0px;
     }
   }
 
@@ -38,9 +46,15 @@
     align-items: center;
     flex-direction: column;
 
+    @media(max-width: 576px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
     h2 {
       text-align: center;
     }
+
   }
 
 
