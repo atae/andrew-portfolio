@@ -1,14 +1,15 @@
 @import '/about/about.scss';
 @import '/contact/contact.scss';
+@import '/portfolio/portfolio.scss';
 
 .page-container {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: calc(100% - 260px);
+  height: calc(100% - 280px);
   position: absolute;
   z-index: 500;
-  top: 260px;
+  top: 280px;
   bottom: 0;
 
   @media(max-width: 576px) {
@@ -18,7 +19,7 @@
 }
 
 .page {
-  width: 80%;
+  width: 90%;
   display:flex;
   justify-content: center;
   overflow-y: scroll;

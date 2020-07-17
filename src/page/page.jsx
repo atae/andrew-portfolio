@@ -1,6 +1,8 @@
 import React, {Suspense, lazy} from 'react';
 import {Switch, Route, useLocation} from 'react-router-dom';
 // import {CSSTransitionGroup} from 'react-transition-group';
+import MessagingScreenshot from './RaiseMe Messaging Screenshot.png';
+
 import {
   TransitionGroup,
   CSSTransition,
@@ -36,19 +38,19 @@ export default function Page({type, match}) {
         {
           name: 'Portfolio Site',
           date: 'July 2020',
-          shortDescription: '',
-          tech: ['React', 'node'],
-          image: '',
-          liveUrl: '',
-          githubUrl: ''
+          shortDescription: "The site you're on now!",
+          tech: ['React', 'Node'],
+          image: 'https://i.gyazo.com/af6ed2a340b7a278f09070dcb2153405.gif',
+          liveUrl: 'https://www.andrewtae.com',
+          githubUrl: 'https://github.com/atae/andrews-hot-ass-portfolio-site/'
         },
         {
           name: 'RaiseMe Bulk Messaging',
+          shortDescription: 'College/Student Bulk Message System',
           date: 'Nov 2019',
-          shortDescription: '',
           description: [],
           tech: ['AWS SES', 'React', 'Redux', 'Ruby on Rails'],
-          image: '',
+          image: MessagingScreenshot,
           liveUrl: '',
           githubUrl: ''
         },
@@ -58,29 +60,30 @@ export default function Page({type, match}) {
           shortDescription: 'Beautiful Landing Pages for B2B Clients',
           description: [],
           tech: ['HTML, CSS, JS', 'AWS Cloudfront'],
-          image: '',
-          liveUrl: '',
+          image: 'https://i.gyazo.com/2739a6675f9c9f9e2a7dfcc4f8968c68.gif',
+          liveUrl: 'https://www.raise.me/college/overview',
           githubUrl: '',
         },
         {
-          name: 'Veritas Customer Success Portal',
+          name: 'Hiyoko Jisho',
           date: '2018',
-          shortDescription: 'React App to explore Veritas customer stories',
+          shortDescription: "Japanese Dictionary based on Heisig's RTK",
+          description: [],
+          tech: ['React', 'jisho.org API', 'Fuzzy'],
+          image: 'https://i.gyazo.com/29a17fa248dd34fb374a0459c57a000f.gif',
+          liveUrl: 'https://www.hiyokojisho.com',
+          githubUrl: 'https://github.com/atae/jisho-word-builder'
+        },
+        {
+          name: 'Veritas Customer Success',
+          date: '2018',
+          shortDescription: 'Explore Veritas Customer Stories',
           description: [
             'A one-off application to allow users to search and filter through hundreds of Veritas customers.',
             'This project involved creating a custom API endpoint into the Adobe Experience Manager CMS to access our customer data from the frontend dynamically.'],
           tech: ['React', 'Adobe Experience Manager', 'API Design'],
           image: 'https://i.gyazo.com/33d2c354bce1bd00e39d74f7d5845724.gif',
           liveUrl: 'https://www.veritas.com/customer-success',
-          githubUrl: '',
-        },
-        {
-          name: '',
-          shortDescription: '',
-          description: [],
-          tech: [],
-          image: '',
-          liveUrl: '',
           githubUrl: '',
         },
         {

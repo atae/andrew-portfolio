@@ -1,0 +1,9 @@
+@import '/card/card.scss';
+
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 48px 0 ;
+}

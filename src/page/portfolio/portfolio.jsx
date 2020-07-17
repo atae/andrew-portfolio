@@ -1,10 +1,10 @@
 import React from 'react';
+import Card from './card';
 
-export default function Portfolio({pageColor}) {
+export default function Portfolio({pageColor, content}) {
   return (
-    <div className={`${pageColor}-background-font`}>
-      <h1>Coming Very Soon</h1>
-      <p>Hopefully by tomorrow July 17th!</p>
+    <div className={`portfolio ${pageColor}-background-font`}>
+      {content.map(data => <Card data={data}/>)}
     </div>
   )
 }
