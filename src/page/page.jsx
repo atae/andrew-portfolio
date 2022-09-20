@@ -43,11 +43,11 @@ export default function Page({type, match}) {
           shortDescription: 'Customer Portal for PayPal Shopping',
           tech: ['React', 'GraphQl'],
           liveUrl: 'https://www.paypal.com/shopping',
-          image: 'https://gyazo.com/437942a0a6550533d9ad8b08abb671b0'
+          image: 'https://i.gyazo.com/437942a0a6550533d9ad8b08abb671b0.gif'
         },
         {
           name: 'Portfolio Site',
-          date: 'July 2020',
+          date: '2020',
           shortDescription: "The site you're on now!",
           tech: ['React', 'Node'],
           image: 'https://i.gyazo.com/c4e865405d4741027e9e4148c44a5ebc.gif',
@@ -57,7 +57,7 @@ export default function Page({type, match}) {
         {
           name: 'RaiseMe Bulk Messaging',
           shortDescription: 'College/Student Bulk Message System',
-          date: 'Nov 2019',
+          date: '2019',
           description: [],
           tech: ['AWS SES', 'React', 'Redux', 'Ruby on Rails'],
           image: MessagingScreenshot,
@@ -98,15 +98,18 @@ export default function Page({type, match}) {
         },
         {
           name: 'Beautiful Typing',
+          date :'2017',
           shortDescription: 'Modern Arcade-Style Typing Game ',
           description: [],
           tech: ['jQuery', 'HTML', 'CSS', 'JS', 'Canvas'],
           image: 'https://raw.githubusercontent.com/atae/andrew-portfolio/master/images/beautiful_typing.gif',
           liveUrl: 'https://atae.github.io/BeautifulTyping/beauTypin.html',
           githubUrl: 'https://github.com/atae/BeautifulTyping',
+          soundWarning: true
         },
         {
           name: 'Major9',
+          date :'2017',
           shortDescription: 'Musical Storefront for Japanese Jazz',
           description: [
             'Full stack project created during my time at App Academy',
