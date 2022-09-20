@@ -79,9 +79,22 @@
 
     .about-image{
       position: relative;
-      width: 250px;
       height: 250px;
+      left: 50%;
+      transform: translateX(-50%);
       // margin-top: 5px;
+    }
+  }
+
+}
+
+.white-background-font {
+  .about {
+    .profile {
+      .about-image-cropper {
+        background-color: $red;
+        border: 2px solid $red;
+      }
     }
   }
 }

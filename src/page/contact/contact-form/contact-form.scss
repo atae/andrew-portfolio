@@ -3,13 +3,11 @@
   justify-content: space-evenly;
 }
 
+
 a {
   color: $white;
   text-decoration: none;
 
-  &:visited {
-    color: $red;
-  }
 
   &:hover {
     text-decoration: underline;
@@ -76,7 +74,6 @@ a {
 }
 
 #contact {
-  background: rgba($black, 0.25);
   padding: 25px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   margin-bottom: 50px;
@@ -139,22 +136,17 @@ fieldset {
   width: 100%;
   max-width: 400px;
   border: none;
-  background-color: $green;
-  color: $white;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
   transition: background-color .25s;
 
   &:hover {
-    background-color: $white;
-    color: $green;
     transition: background-color .25s;
   }
 }
 
 #contact button[type="submit"]:hover {
-  background: $white;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -188,4 +180,42 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
+}
+
+.green-background-contact{
+  &#contact {
+    background: rgba($black, 0.25);
+  }
+
+  #contact-submit {
+    background-color: $green;
+    color: $white;
+    &:hover {
+      background-color: $white;
+      color: $green;
+    }
+  }
+
+  #contact-submit:hover {
+    background: $white;
+  }
+}
+
+.white-background-contact {
+  &#contact {
+    background: rgba($red, 0.25);
+  }
+
+  #contact-submit {
+    background-color: rgba($red, 0.50);
+    color: $white;
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+  }
+
+  #contact-submit:hover {
+    background: $red;
+  }
 }

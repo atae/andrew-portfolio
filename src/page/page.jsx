@@ -160,7 +160,7 @@ export default function Page({type, match, changeCurrentLink}) {
           "Genres": ["Funk", "Hard Rock", "Neo Soul", "Japanese Jazz Fusion", "Bossa Nova", "Metal", "Anime/Game BGM"],
           "Other": ["Transcription", "Fingerstyle Arrangements", "Improvisation"]
         },
-        image: "https://avatars2.githubusercontent.com/u/10753609?s=460&u=474d9f32aa1c0dd5beaaac5619048b0cbac2e257&v=4"
+        image: "https://raw.githubusercontent.com/atae/andrew-portfolio/master/images/Tae_Andrew_19-08-01_1072.jpg"
       },
       'portfolio': [{
           name: 'coloUrs and mayhem: Universe A & B',
@@ -223,6 +223,7 @@ export default function Page({type, match, changeCurrentLink}) {
                 <Route path={`${match.path}/contact`} component={contact}/>
                 <Route path={`${match.path}/portfolio`} component={portfolio}/>
                 <Route path={`${match.path}/discography`} component={portfolio}/>
+                <Route path={`${match.path}/transcriptions`} component={() => <h2 className="white-background-font">Under Construction</h2>} />
             </Switch>
           </CSSTransitionGroup>
       </div>

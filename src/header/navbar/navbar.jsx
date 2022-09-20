@@ -27,10 +27,10 @@ export default function Navbar({currentLink, pageInfo}) {
         pageName: 'discography',
         text: 'Discography',
       },
-      {
-        pageName: 'store',
-        text: 'Store',
-      },
+      // {
+      //   pageName: 'store',
+      //   text: 'Store',
+      // },
       {
         pageName: 'transcriptions',
         text: 'Sheet Music',

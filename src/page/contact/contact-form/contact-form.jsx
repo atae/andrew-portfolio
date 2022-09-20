@@ -27,7 +27,7 @@ export default function ContactForm({pageColor, content}) {
       <div className="contact-methods">
         {generateContactMethods()}
       </div>
-    <div id="contact" class="contact-form container">
+    <div id="contact" class={`contact-form container ${pageColor}-background-contact`}>
       <h1 className={`${pageColor}-background-font`}>Contact Form</h1>  
       <form action="https://formspree.io/andrewtae368@gmail.com" method="post">
         <fieldset>
