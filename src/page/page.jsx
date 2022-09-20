@@ -93,8 +93,8 @@ export default function Page({type, match}) {
           shortDescription: 'Modern Arcade-Style Typing Game ',
           description: [],
           tech: ['jQuery', 'HTML', 'CSS', 'JS', 'Canvas'],
-          image: 'https://www.andrewtae.co/images/beautiful_typing.gif',
-          liveUrl: 'https://www.andrewtae.co/BeautifulTyping/beauTyping.html',
+          image: 'https://www.andrewtae.com/images/beautiful_typing.gif',
+          liveUrl: 'https://www.andrewtae.com/BeautifulTyping/beauTypin.html',
           githubUrl: 'https://github.com/atae/BeautifulTyping',
         },
         {
@@ -106,7 +106,7 @@ export default function Page({type, match}) {
             "I'm just happy that it still works to this day"
           ],
           tech: ['React', "Ruby on Rails", "PostgreSQL"],
-          image: 'http://www.andrewtae.co/images/major9_home.gif',
+          image: 'http://www.andrewtae.com/images/major9_home.gif',
           liveUrl: 'http://major9.audio',
           githubUrl: 'https://github.com/atae/major9'
         }
