@@ -38,6 +38,14 @@ export default function Page({type, match}) {
       },
       portfolio: [
         {
+          name: 'PayPal Shopping Hub',
+          date: '2022',
+          shortDescription: 'Customer Portal for PayPal Shopping',
+          tech: ['React', 'GraphQl'],
+          liveUrl: 'https://www.paypal.com/shopping',
+          image: 'https://gyazo.com/437942a0a6550533d9ad8b08abb671b0'
+        },
+        {
           name: 'Portfolio Site',
           date: 'July 2020',
           shortDescription: "The site you're on now!",
@@ -85,7 +93,7 @@ export default function Page({type, match}) {
             'This project involved creating a custom API endpoint into the Adobe Experience Manager CMS to access our customer data from the frontend dynamically.'],
           tech: ['React', 'Adobe Experience Manager', 'API Design'],
           image: 'https://i.gyazo.com/33d2c354bce1bd00e39d74f7d5845724.gif',
-          liveUrl: 'https://www.veritas.com/customer-success',
+          liveUrl: '',
           githubUrl: '',
         },
         {
@@ -93,8 +101,8 @@ export default function Page({type, match}) {
           shortDescription: 'Modern Arcade-Style Typing Game ',
           description: [],
           tech: ['jQuery', 'HTML', 'CSS', 'JS', 'Canvas'],
-          image: 'https://www.andrewtae.com/images/beautiful_typing.gif',
-          liveUrl: 'https://www.andrewtae.com/BeautifulTyping/beauTypin.html',
+          image: 'https://raw.githubusercontent.com/atae/andrew-portfolio/master/images/beautiful_typing.gif',
+          liveUrl: 'https://atae.github.io/BeautifulTyping/beauTypin.html',
           githubUrl: 'https://github.com/atae/BeautifulTyping',
         },
         {
@@ -106,8 +114,8 @@ export default function Page({type, match}) {
             "I'm just happy that it still works to this day"
           ],
           tech: ['React', "Ruby on Rails", "PostgreSQL"],
-          image: 'http://www.andrewtae.com/images/major9_home.gif',
-          liveUrl: 'http://major9.audio',
+          image: 'https://raw.githubusercontent.com/atae/andrew-portfolio/master/images/major9_home.gif',
+          liveUrl: '',
           githubUrl: 'https://github.com/atae/major9'
         }
       ],
