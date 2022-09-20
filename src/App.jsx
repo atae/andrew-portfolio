@@ -37,13 +37,13 @@ function App() {
         text: 'About',
       },
       {
-        pageName: 'discography',
+        pageName: 'portfolio',
         text: 'Discography',
       },
-      {
-        pageName: 'store',
-        text: 'Store',
-      },
+      // {
+      //   pageName: 'store',
+      //   text: 'Store',
+      // },
       {
         pageName: 'transcriptions',
         text: 'Sheet&nbsp;Music',
@@ -60,7 +60,7 @@ function App() {
     // <Suspense fallback={<div className="white-background-font">Loading...</div>}>
     // </Suspense>
     return (
-        <Page match={match} type={type} />
+        <Page match={match} type={type} changeCurrentLink={changeCurrentLink}/>
     );
   }
 

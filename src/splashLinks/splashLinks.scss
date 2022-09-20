@@ -64,6 +64,8 @@
           h2 {
             font-size: 28px;
             font-weight: bold;
+            margin: -300px 10px 0 0;
+
             // margin-top: -370px;
 
             // &.engineer {
@@ -76,14 +78,13 @@
             //   margin-right: 28px;
             // }
 
-            transition: opacity .5s;
+            transition: opacity .5s, margin 3s;
           }
         }
         
         h2 {
           font-family: 'Quicksand';
           font-size: 24px;
-          margin: 0;
           margin-right: 10px;
           transition: font-size 0.25s, margin .5s;
           font-weight: 100;
