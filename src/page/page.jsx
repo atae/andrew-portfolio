@@ -162,7 +162,46 @@ export default function Page({type, match, changeCurrentLink}) {
         },
         image: "https://raw.githubusercontent.com/atae/andrew-portfolio/master/images/Tae_Andrew_19-08-01_1072.jpg"
       },
-      'portfolio': [{
+      'portfolio': [
+        {
+          name: 'Call It A Jam in Liyue',
+          date: '2021',
+          shortDescription: 'YoMusic Music Composition Contest',
+          description: [],
+          tech: [],
+          image: 'https://i.ytimg.com/an_webp/vsWcA03C1Pc/mqdefault_6s.webp?du=3000&sqp=CM-A5ZwG&rs=AOn4CLBImMqOLg-cyActKnjpbLv1ZGIBmQ',
+          albumUrl: 'https://www.hoyolab.com/article/4656590'
+        },
+        {
+          name: 'Kleepocalypse',
+          date: '2021',
+          shortDescription: 'YoMusic Music Composition Contest',
+          description: [],
+          tech: [],
+          image: 'https://i.ytimg.com/an_webp/vkFvACmvn6s/mqdefault_6s.webp?du=3000&sqp=COyE5ZwG&rs=AOn4CLCLVDYCAgoxcaNU_edpSiCifXO44Q',
+          albumUrl: 'https://www.hoyolab.com/article/4656506'
+        },
+        {
+          name: 'Sambanomiya',
+          date: '2021',
+          shortDescription: 'YoMusic Music Composition Contest',
+          description: [],
+          tech: [],
+          image: 'https://i.ytimg.com/an_webp/WzLTnAId6nE/mqdefault_6s.webp?du=3000&sqp=CLH55JwG&rs=AOn4CLCj7wFZ2GE9SE5X5xOPXp-G8-kDDw',
+          albumUrl: 'https://www.hoyolab.com/article/4658068'
+        },
+        {
+        name: 'Glory Days (~栄枯盛衰~)',
+        date: '2020',
+        shortDescription: 'DJMAX Remix Contest - 4th Place',
+        description: [
+          'Won 4th place in a remix contest for one of my favorite music games DJMAX',
+        ],
+        tech: [],
+        image: 'https://i.ytimg.com/vi/zU_iBdlb5UY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBxl3Q_sT_TwlB6wFU-04_mTClKg',
+        albumUrl: 'https://www.youtube.com/watch?v=zU_iBdlb5UY'
+      },
+        {
           name: 'coloUrs and mayhem: Universe A & B',
           date :'2012',
           shortDescription: 'Iron Knight (Track 17) and Violet Prince (Track 24)',
