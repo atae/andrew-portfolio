@@ -35,8 +35,53 @@
   a:visited {
     color: $white;
   }
+
+  &.orange-background-card {
+    color: $black;
+
+    a, a:visited {
+      color: $black;
+    }
+  }
+
+  .wip-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+    border: 1px solid currentColor;
+    opacity: 0.6;
+    margin-bottom: 8px;
+  }
   img {
     width: 300px;
     height: 180px;
+    object-fit: contain;
+  }
+
+  .audio-player {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .card-image-placeholder {
+    width: 300px;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      opacity: 0.5;
+      text-align: center;
+      padding: 0 16px;
+    }
   }
 }

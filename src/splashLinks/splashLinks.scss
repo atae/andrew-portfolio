@@ -2,9 +2,10 @@
 
 
 .splash-links {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
-  height: 100%;
+  height: 100vh;
+  height: 100dvh;
 
   .splash-link {
     display: flex;

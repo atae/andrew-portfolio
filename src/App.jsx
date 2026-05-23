@@ -53,7 +53,7 @@ function App() {
         text: 'Contact'
       }
     ],
-    'nerd': []
+    'sidequests': []
   }
 
   const suspendedPage = (type, match) => {
@@ -71,7 +71,7 @@ function App() {
       <Switch>
         <Route path="/engineer" component={({match})=>{return(suspendedPage('engineer', match))}}/>
         <Route path="/music" component={({match})=>{return(suspendedPage('music', match))}}/>
-        <Route path="/nerd" component={({match})=>{return(suspendedPage('nerd', match))}}/>
+        <Route path="/sidequests" component={({match})=>{return(suspendedPage('sidequests', match))}}/>
       </Switch>
     </div>
   );

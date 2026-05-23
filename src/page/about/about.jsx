@@ -7,7 +7,7 @@ export default function About({content, pageColor}) {
         <div className="about">
         <div className="profile">
           <div className="about-image-cropper">
-            <img className="about-image" src={content.image} />
+            <img className="about-image" src={content.image} alt={content.title || 'Profile photo'} />
           </div>
           <div className="skills">
         <h2>Skills</h2>

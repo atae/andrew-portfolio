@@ -1,0 +1,38 @@
+.discography-container {
+  width: 100%;
+
+  .disc-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 24px 0 8px;
+
+    .disc-tab {
+      background: transparent;
+      border: 1px solid currentColor;
+      border-radius: 4px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+      padding: 6px 24px;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &.active {
+        opacity: 1;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 24px 0 48px;
+  }
+}

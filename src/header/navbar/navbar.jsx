@@ -40,22 +40,14 @@ export default function Navbar({currentLink, pageInfo}) {
         text: 'Contact'
       }
     ],
-    'nerd': [
+    'sidequests': [
       {
         pageName: 'about',
         text: 'About',
       },
       {
-        pageName: 'japanese',
-        text: '日本語'
-      },
-      {
-        pageName: 'gaming',
-        text: 'Gaming'
-      },
-      {
-        pageName: 'blog',
-        text: 'Blog'
+        pageName: 'goals',
+        text: 'Quest Log',
       }
     ]
   }
@@ -63,8 +55,8 @@ export default function Navbar({currentLink, pageInfo}) {
 
   let generateLinks = () => {
     return navbarLinks[currentLink].map(linkInfo => {
-      return (<li>
-        <Link 
+      return (<li key={linkInfo.pageName}>
+        <Link
           className={linkInfo.pageName === currentPage ? 'active' : ''}
           to={`/${currentLink}/${linkInfo.pageName}`}
         >

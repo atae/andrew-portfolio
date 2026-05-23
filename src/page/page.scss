@@ -1,21 +1,19 @@
 @import '/about/about.scss';
 @import '/contact/contact.scss';
 @import '/portfolio/portfolio.scss';
+@import '/discography/discography.scss';
+@import '/transcriptions/transcriptions.scss';
+@import '/sidequests/goals/goals.scss';
 
 .page-container {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: calc(100% - 280px);
   position: absolute;
   z-index: 500;
-  top: 280px;
+  top: var(--header-height, 280px);
+  height: calc(100dvh - var(--header-height, 280px));
   bottom: 0;
-
-  @media(max-width: 576px) {
-    top: 380px;
-    height: calc(100% - 380px);
-  }
 }
 
 .page {

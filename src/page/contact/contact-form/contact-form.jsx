@@ -34,14 +34,20 @@ export default function ContactForm({pageColor, content}) {
     
           if (contact.type === 'email') {
             contactLink = `mailto:${contactLink}`;
-          } else if (contact.type === 'phone') {
-            contactLink = `tel:${contactLink}`;
           }
-    
-          return(<a 
-            target="_blank"
-            rel="noopener noreferrer"
-            href={contactLink}>{contact.type}</a>);
+
+          const isDownload = contact.type === 'resume';
+
+          return (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={contactLink}
+              download={isDownload ? 'Andrew Tae Resume.pdf' : undefined}
+            >
+              {contact.type}
+            </a>
+          );
         });
       }
 
@@ -53,25 +59,25 @@ export default function ContactForm({pageColor, content}) {
       <div className="contact-methods">
         {generateContactMethods()}
       </div>
-      <div id="contact" class={`contact-form container ${pageColor}-background-contact`}>
+      <div id="contact" className={`contact-form container ${pageColor}-background-contact`}>
         <form ref={form} onSubmit={sendEmail}>
-          <label class={`${pageColor}-background-font`}>Name</label>
+          <label className={`${pageColor}-background-font`}>Name</label>
           <input
             type="text"
             name="user_name"
             value={name}
             onChange={event => setName(event.target.value)}
           />
-          <label class={`${pageColor}-background-font`}>Email</label>
+          <label className={`${pageColor}-background-font`}>Email</label>
           <input
             type="email"
             name="user_email"
             value={email}
             onChange={event => setEmail(event.target.value)}
           />
-          <label class={`${pageColor}-background-font`}>Message</label>
+          <label className={`${pageColor}-background-font`}>Message</label>
           <textarea name="message" value={message} onChange={event => setMessage(event.target.value)}/>
-          <div class="contact-button-container">
+          <div className="contact-button-container">
             <button id="contact-submit" type="submit" value="Send"><p>Submit</p></button>
           </div>
         </form>

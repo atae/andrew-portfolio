@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import Navbar from './navbar';
 import {Link} from 'react-router-dom';
 import Photo from './Andrew-Photo-Cropped.jpg';
 
 export default function Header({currentLink, changeCurrentLink}) {
+  const headerRef = useRef(null);
+
+  useLayoutEffect(() => {
+    if (!headerRef.current) return;
+    const observer = new ResizeObserver(entries => {
+      for (const entry of entries) {
+        document.documentElement.style.setProperty(
+          '--header-height',
+          `${Math.ceil(entry.contentRect.height)}px`
+        );
+      }
+    });
+    observer.observe(headerRef.current);
+    return () => observer.disconnect();
+  }, []);
   let pageInfo = {
     'home': {
       pageColor:'',
@@ -17,15 +32,15 @@ export default function Header({currentLink, changeCurrentLink}) {
       pageColor: 'white',
       title: 'Musician'
     },
-    'nerd': {
+    'sidequests': {
       pageColor: 'orange',
-      title: 'Nerd'
+      title: 'Side Quests'
     }
   }
 
   let backButtonColor = currentLink === 'engineer' ? 'white' : pageInfo[currentLink].pageColor
   return (
-    <header className={`header ${pageInfo[currentLink].pageColor}-background-font`}>
+    <header ref={headerRef} className={`header ${pageInfo[currentLink].pageColor}-background-font`}>
       <div className="info-container">
         <div className='andrew-head-cropper'>
           { currentLink !== 'home' && 
@@ -34,10 +49,11 @@ export default function Header({currentLink, changeCurrentLink}) {
             </p>
           }
           <Link to={"/"} className={currentLink === 'home' ? 'disable-link' : ''} onClick={()=> {changeCurrentLink('home')}}>
-            <img 
-              className={`andrew-head ${ currentLink === 'home' ? '' : 'clickable'}`} 
+            <img
+              className={`andrew-head ${ currentLink === 'home' ? '' : 'clickable'}`}
               src={Photo}
-              />
+              alt="Andrew Tae"
+            />
           </Link>
         </div>
         <div className="andrew-title">

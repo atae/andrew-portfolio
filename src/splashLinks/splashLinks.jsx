@@ -25,8 +25,8 @@ export default function SplashLinks({currentLink, changeCurrentLink}) {
     },
     {
       background: 'orange',
-      text: 'Nerd',
-      pageName: 'nerd'
+      text: 'Side Quests',
+      pageName: 'sidequests'
     }
   ]
 
