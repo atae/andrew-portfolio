@@ -31,11 +31,13 @@
       width: 100%;
       opacity: 1;
       transition: width .5s;
+      pointer-events: none;
     }
 
     &.flat {
       width: 0%;
       transition: width .5s;
+      pointer-events: none;
     }
     a {
       width: 100%;
