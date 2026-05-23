@@ -10,7 +10,7 @@ export default function SplashLinks({currentLink, changeCurrentLink}) {
     if (location.pathname === '/') {
       changeCurrentLink('home');
     }
-  }, [location])
+  }, [location, changeCurrentLink])
 
   let links = [
     {

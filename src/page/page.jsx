@@ -1,4 +1,4 @@
-import React, {Suspense, lazy, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {Switch, Route, useLocation} from 'react-router-dom';
 // import {CSSTransitionGroup} from 'react-transition-group';
 import MessagingScreenshot from './RaiseMe Messaging Screenshot.png';
@@ -20,7 +20,7 @@ export default function Page({type, match, changeCurrentLink}) {
 
   useEffect(() => {
     changeCurrentLink(location.pathname.split('/')[1])
-  }, [location]);
+  }, [location, changeCurrentLink]);
 
   let pageContent = {
     'engineer': {

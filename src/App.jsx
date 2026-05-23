@@ -1,4 +1,4 @@
-import React, {useState, Suspense, lazy} from 'react';
+import React, {useState} from 'react';
 import './App.scss';
 import SplashLinks from './splashLinks';
 import Header from './header';
@@ -15,47 +15,6 @@ import Page from './page';
 function App() {
   let urlLink = useLocation().pathname.split('/')[1]
   let [currentLink, changeCurrentLink] = useState(urlLink ? urlLink : 'home');
-  let navbarLinks = {
-    'home' : [],
-    'engineer': [
-      {
-        pageName: 'about',
-        text: 'About',
-      },
-      {
-        pageName: 'portfolio',
-        text: 'Portfolio',
-      },
-      {
-        pageName: 'contact',
-        text: 'Contact'
-      }
-    ],
-    'music': [
-      {
-        pageName: 'about',
-        text: 'About',
-      },
-      {
-        pageName: 'portfolio',
-        text: 'Discography',
-      },
-      // {
-      //   pageName: 'store',
-      //   text: 'Store',
-      // },
-      {
-        pageName: 'transcriptions',
-        text: 'Sheet&nbsp;Music',
-      },
-      {
-        pageName: 'contact',
-        text: 'Contact'
-      }
-    ],
-    'sidequests': []
-  }
-
   const suspendedPage = (type, match) => {
     // <Suspense fallback={<div className="white-background-font">Loading...</div>}>
     // </Suspense>
