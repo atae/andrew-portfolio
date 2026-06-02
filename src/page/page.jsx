@@ -57,6 +57,15 @@ export default function Page({type, match, changeCurrentLink}) {
           githubUrl: ''
         },
         {
+          name: 'Agent Paranoia',
+          date: '2025',
+          shortDescription: 'Self-hosted P2P encrypted file transfer & chat over WebRTC',
+          tech: ['WebRTC', 'Vanilla JS', 'Node.js', 'Socket.io'],
+          image: 'https://raw.githubusercontent.com/atae/agent-paranoia/master/screenshots/04-session-alice.png',
+          githubUrl: 'https://github.com/atae/agent-paranoia',
+          liveUrl: ''
+        },
+        {
           name: 'Peloton Auth Platform',
           date: '2022',
           shortDescription: 'Auth0-based social account linking for 2.3M+ users',
